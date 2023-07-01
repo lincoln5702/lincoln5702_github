@@ -6,7 +6,7 @@ theme:
       - navigation.side.indexes
       - footer.prev_next
       
-    nav:
+nav:
     - About Me: 'index.md'
     - About: 
       - Index: 'About_Me.md'
