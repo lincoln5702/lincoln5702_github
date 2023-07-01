@@ -1,0 +1,57 @@
+site_name: My Docs
+theme: 
+   name: terminal
+   palette: gruvbox_dark
+   features:
+      - navigation.side.indexes
+      - footer.prev_next
+      
+    nav:
+    - About Me: 'index.md'
+    - About: 
+      - Index: 'About_Me.md'
+    - Writeups: 'abusing_priviliges.md'
+    - Linux: 
+      - tryhackme: 'abusing_priviliges.md'
+      - hackthebox: 'abusing_priviliges.md'
+    - PrivilegeEscalation:
+      - Index: 'vulnerableSoftware.md'
+      - Windows: 
+        - Index: "ServiceMisconfigurations.md"
+    - ServiceMisconfiguration: 'ServiceMisconfigurations.md'
+    - VulnerableSoftwares: 'vulnerableSoftware.md'  
+      
+
+  
+        
+
+plugins:
+  - search
+  
+
+markdown_extensions:
+  - toc:
+      baselevel: "3"
+      toc_depth: "3"
+      permalink: "#"
+      permalink_title: Anchor link to this section for reference
+markdown_extensions:
+  # Python Markdown  
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - toc:
+      permalink: "#"
+      permalink_title: Anchor link to this section for reference
+
+  # PyMdown Extensions
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: 
+        - docs
+
+
